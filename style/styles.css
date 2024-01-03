@@ -1,0 +1,610 @@
+
+@font-face {
+    font-display: swap;
+    
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v19-latin-regular.eot');
+    src: url('../fonts/play-v19-latin-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/play-v19-latin-regular.woff2') format('woff2'),
+        url('../fonts/play-v19-latin-regular.woff') format('woff'),
+        url('../fonts/play-v19-latin-regular.ttf') format('truetype'),
+        url('../fonts/play-v19-latin-regular.svg#Play') format('svg'); 
+}
+
+@font-face {
+    font-display: swap;
+    
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v19-latin-700.eot');
+    src: url('../fonts/play-v19-latin-700.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/play-v19-latin-700.woff2') format('woff2'),
+        url('../fonts/play-v19-latin-700.woff') format('woff'),
+        url('../fonts/play-v19-latin-700.ttf') format('truetype'), 
+        url('../fonts/play-v19-latin-700.svg#Play') format('svg');
+}
+        
+ 
+ @font-face {
+     font-display: swap;
+     
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../fonts/roboto-v30-latin-regular.eot');
+     src: url('../fonts/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-v30-latin-regular.woff2') format('woff2')
+         url('../fonts/roboto-v30-latin-regular.woff') format('woff'),
+         url('../fonts/roboto-v30-latin-regular.ttf') format('truetype')
+         url('../fonts/roboto-v30-latin-regular.svg#Roboto') format('svg');
+     
+ }
+
+
+ @font-face {
+     font-display: swap;
+     
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 700;
+     src: url('../fonts/roboto-v30-latin-700.eot');
+     src: url('../fonts/roboto-v30-latin-700.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+         url('../fonts/roboto-v30-latin-700.woff') format('woff'),
+         url('../fonts/roboto-v30-latin-700.ttf') format('truetype'),
+         url('../fonts/roboto-v30-latin-700.svg#Roboto') format('svg');
+ }
+
+
+:root {
+    --color-primary-white: #FFFFFF;
+    --color-primary-light: #2B7FFF;
+    --color-primary-dark: #011C44;
+    --color-secondary-dark: #4A4A4A;
+    --color-secondary-light: #747272;
+    --color-secondary-blue:#011F4A;
+    --color-secondary-yellow: #FFD02B;
+    
+}
+
+/* Base */
+*{
+    box-sizing: border-box;
+}
+
+body{
+color: var(--color-primary-dark);
+font-family: 'Play' , 'Roboto' , sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.2;
+margin: 0;
+
+}
+
+a {
+text-decoration: none;
+}
+
+address{
+font-style: normal;
+}
+
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;       
+}
+
+
+::after, ::before {
+box-sizing: border-box;
+}
+
+
+
+/* Link styles */
+
+.link {
+color: var(--color-primary-dark);
+text-decoration: none;
+
+
+}
+
+.link:hover {
+color: var(--color-primary-light);
+font-weight: 700;
+}
+
+
+/* Container style */
+
+.container {
+width: 100%;
+max-width: 1288px;
+padding: 0 24px;
+margin: 0 auto;
+}
+
+
+/* Header */
+
+.header {
+padding: 32px 0;
+background-color: lightgray;
+}
+
+
+.header-navigation {
+display: flex;
+align-items: center;
+gap: 40px;
+}
+
+.navigation-bar {
+display: flex;
+align-items: center;
+justify-content: space-around;
+gap: 40px;
+flex-grow: 1;
+}
+
+
+.header-list {
+display: flex;
+align-items: center;
+gap: 56px;
+flex-grow: 1;
+justify-content: center;   
+}
+
+
+.header-socials {
+display: flex;
+gap: 32px;
+justify-content: center;
+height: 32px;
+width: 32px;
+}
+
+.header-icons svg {
+height: 32px;
+width: 32px;
+}
+
+.header-icons {
+fill: var(--color-primary-dark);
+display: flex;
+gap: 16px;
+}
+
+.header-icons:hover {
+fill: var(--color-primary-light);
+}
+
+/* Section Main */
+
+ .main-section {
+padding: 125px 0;
+background-image: url(../images/main-title.jpg);
+background-repeat: no-repeat;
+background-position: center top;
+background-size:cover;
+}
+
+.main-container {
+padding-left: 120px;
+max-width: 530px;
+}
+
+
+.main-text {
+margin-top: 0;
+}
+
+.main-title {
+font-family: Play;
+color: var(--color-primary-light);
+font-size: 140px;
+font-weight: 700;
+text-transform: capitalize;
+text-align: left;
+line-height: 81.5%;
+margin-bottom: 40px;
+margin-top: 0;
+}
+
+.main-order {
+max-width: 240px;
+}
+
+
+.main-buttom {
+color: var(--color-primary-white);
+background: var(--color-primary-light);
+border-radius: 32px;
+cursor: pointer;
+border: 2px solid var(--color-primary-light);
+padding: 16px 32px;
+font-size: 18px;
+font-weight: 600;
+margin-bottom: 14px;
+}
+
+.main-buttom:hover {
+color: var(--color-primary-dark);
+background: var(--color-primary-white);
+border: 2px solid var(--color-primary-light);
+}
+
+
+.main-order p {
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+color: var(--color-secondary-dark);
+text-align: center;
+margin: 0;    
+}
+
+/* Section about */
+
+.about-section {
+ 
+}
+
+.about-container {
+display: flex;
+gap: 28px;
+justify-content: space-between;
+}
+
+.about-content {
+    max-width: 709px;
+    padding-top: 40px;
+}
+
+.about-title {
+font-family: 'Play' sans-serif;
+font-weight: 700;
+font-size: 64px;
+margin-bottom: 40px;
+margin-top: 0;
+}
+
+.about-title .accent {
+color: var(--color-primary-light);
+text-transform: capitalize;
+text-align: left;
+
+}
+.about-text {
+font-family: 'Roboto' sans-serif;
+font-size: 22px;
+line-height: 172%;
+font-weight: 400;
+}
+
+
+.about-text .accent {
+text-transform: capitalize;
+font-weight: 700;
+}
+
+.about-image img {
+max-width: 327px;
+height: 327px;
+border-radius: 327px;
+        
+}
+
+
+/* ADVANTAGES section */
+
+
+.advantages-title{
+font-family: 'Play' sans-serif;
+font-weight: 700;
+font-size: 64px;
+text-align: center;
+margin: 176px auto 48px auto;
+}
+.advantages-title .accent {
+color: var(--color-primary-light); 
+}
+
+.advantages-list {
+display: flex;
+justify-content: space-evenly;
+font-size: 18px;
+line-height: 133%;
+}
+
+.advantages-item {
+gap: 56px;
+padding: 24px 32px;
+max-width: 316px;
+text-align: center;
+border-radius: 32px;
+box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+}
+
+.advantages-text {
+color: black;
+font-family: 'Roboto' sans-serif;   
+}
+
+.advantages-icon {
+    padding: 5px 0 8 px 0;
+}
+
+
+
+/* Proceders section */
+
+.procedurs-section {
+margin: 96px auto 48px auto;
+   
+}
+
+.procedurs-title{
+font-weight: 700;
+font-size: 64px;
+text-align: center;
+}
+.procedurs-title .accent {
+color: var(--color-primary-light);
+}
+
+.procedurs-slider {
+display: flex;
+align-items: center;
+gap: 32px;
+}
+.procedurs-slider svg {
+    height: 16px;
+    width: 16px;
+}
+
+.procedurs-list {
+display: flex;
+gap: 16px;
+flex-grow: 1;
+justify-content: center;
+}
+
+.procedurs-navigation {
+display: flex;
+flex-shrink: 0;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+width: 44px;
+height: 44px;
+padding: 0;
+border-radius: 50%;
+background-color: transparent;
+border: 1px solid black;
+fill: black;
+
+}
+.procedurs-card {
+border: 1px solid black;    
+border-radius: 4px 120px ;
+width: 344px;
+height: 456px;
+flex-shrink: 0;
+background: linear-gradient(180deg, rgba(1, 28, 68, 0.00) 48.53%, rgba(1, 28, 68, 0.73) 84.61%, #011C44 101.39%);
+}
+
+.procedurs-item {
+color: var(--color-primary-white);
+text-align: center;
+font-size: 22px;
+line-height: 118%;
+ margin: 372px auto 32px auto;  
+}
+
+.procedurs-name {
+margin-bottom: 32px;
+font-weight: 400;
+}
+
+
+/* Contacts section */
+
+.contacts-title{
+font-weight: 700;
+font-size: 64px;
+text-align: center;
+margin: 96px 0 48px 0;
+}
+
+.contacts-title .accent {
+color: var(--color-primary-light);
+}
+
+.contacts-form {
+color: var(--color-primary-white);
+padding: 48px 75px 32px 74px;
+margin: 0;
+}
+.contacts-form .accent {
+color: var(--color-primary-light);
+}
+
+.contacts-container {
+display: flex;
+gap: 32px;
+margin-bottom: 94px;
+}
+
+.contacts-map {
+border-radius: 32px;
+width: 605px;
+height: 481px;
+margin-left: 96px;
+ 
+}
+
+.contacts-content {
+border-radius: 32px;
+background-color: var(--color-primary-dark);
+width: 423px;
+height: 481px;
+flex-shrink: 0;
+
+}
+
+.contacts-buttom {
+color: var(--color-primary-white);
+background: var(--color-primary-light);
+border-radius: 32px;
+cursor: pointer;
+border: 2px solid var(--color-primary-light);
+padding: 16px 32px;
+font-size: 18px;
+font-weight: 600;
+line-height: normal;
+margin-left: 64px;
+
+}
+
+/* Footter section */
+
+footer {
+background-image: url(../images/background-footer.png);  
+background-color: var(--color-primary-dark);
+background-repeat: repeat;
+background-size: cover;
+background-position: center;
+padding: 56px 0;
+    
+}
+
+.link-footer {
+color: var(--color-primary-white);
+text-decoration: none;
+font-weight: 400;
+font-size: 16px;
+font-family: 'Roboto', sans-serif;
+}
+
+.link-footer:hover {
+color: var(--color-primary-light);
+}
+
+.address-link {
+color: var(--color-primary-white);
+text-decoration: none;
+font-weight: 400;
+font-size: 16px;
+font-family: "Roboto" , sans-serif;
+
+}
+.address-link:hover {
+color: var(--color-primary-light);
+}
+
+.footer-container {
+display: flex;
+gap: 20px;
+}
+
+.footer-navigation {
+display: flex;
+flex-basis: 50%;
+gap: 20px;
+}
+
+.footer-logo {
+flex-grow: 1;
+    
+}
+
+.footer-logo a {
+    display: inline-block;
+}
+
+.footer-menu {
+flex-grow: 1;
+}
+
+.footer-menu li {
+    margin-bottom: 16px;
+}
+
+.footer-address {
+display: flex;
+flex-basis: 50%;
+gap: 20px;
+}
+
+.addres-menu svg {
+fill: var(--color-primary-white);
+}
+
+.address-menu {
+flex-grow: 1;
+}
+
+.footer-address li {
+margin-bottom: 16px;
+}
+
+.footer-contacts {
+display: flex;
+gap: 16px;
+}
+
+
+.footer-contacts svg {
+height: 42px;
+width: 42px;
+}
+
+.icons {
+fill: var(--color-primary-white);
+cursor: pointer;
+}
+
+.icons:hover {
+fill: var(--color-primary-light);
+}
+
+
+
+
+/* Privacy policy */
+
+.private-policy {
+color: var(--color-primary-white);
+text-decoration: none; 
+font-size: 16px;
+font-family: sans-serif, 'Roboto';
+}
+
+.private-policy:hover {
+    color: var(--color-primary-light);
+}
+
+.policy-menu {
+flex-grow: 1;
+
+}
+
+.policy-menu p {
+margin-top: 0;
+}
+.icon {
+color: var(--color-secondary-dark);
+font-size: 13px;
+font-family: sans-serif, 'Roboto';
+}
